@@ -83,6 +83,34 @@ h2 {
     color: #ffd60a; 
 }
 
+#video-gallery {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #cdb4db;
+    border-radius: 6px;
+}
+#video-gallery h2 {
+    color: #219ebc;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* CSS for responsive video */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none; /* Optional: remove border */
+}
+
 #events {
     display: flex;
     flex-direction: column;
