@@ -1,0 +1,258 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #03071e; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #00b4d8; /* Updated header color */
+}
+
+p {
+    color: #00b4d8; /* Updated welcome message color */
+}
+
+/* Main Content Styles */
+.h1-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    margin: 20px 0;
+}
+
+.info-box {
+    border: 2px solid #ff006e; /* Border color */
+    border-radius: 10px;       /* Rounded corners */
+    padding: 20px;             /* Padding inside the box */
+    margin: 20px 0;           /* Space above and below the box */
+    background-color: #03071e; /* Background color (optional) */
+    display: flex;             /* Use flexbox for layout */
+    align-items: center;       /* Align items vertically centered */
+}
+
+#workshop-info {
+    flex: 1;                   /* Allow the text section to take up available space */
+    margin-right: 20px;       /* Space between text and image */
+}
+#workshop-info h2 {
+    color: #c77dff;
+}
+#workshop-info p {
+    color: #eaac8b;
+}
+.image-container {
+    flex: 0 0 auto;           /* Prevent the image from growing */
+}
+
+.circular-image {
+    width: 150px;             /* Set a width for the image */
+    height: 150px;            /* Set a height for the image */
+    border-radius: 50%;       /* Make the image circular */
+    object-fit: cover;        /* Ensure the image covers the area without distortion */
+}
+
+
+.text-content {
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Center the text */
+}
+
+h1 span.highlight {
+    color: #ffd60a; /* Highlight color */
+}
+#brouchre {
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin: 3px auto; /* Center section with margin */
+    max-width: 500px; /* Set a max width for the section */
+    padding: 20px; /* Add padding around the section */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    border: 2px solid #add7f6;
+    color: #ff7b00;
+}
+
+#brouchre img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners to the image */
+}
+
+#workshop-event {
+    margin-top: 30px; /* Space above the event section */
+    padding: 15px; /* Inner padding */
+    border: 1px solid #e36414; /* Solid border color */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#workshop-event h2 {
+    color: #f72585; /* Heading color matching the border */
+    font-size: 1.8em; /* Slightly larger font size for emphasis */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#workshop-event ul {
+    list-style-type: disc; /* Default bullet points */
+    margin-left: 20px; /* Indent the list */
+    padding-left: 0; /* Remove default padding */
+    color: #e9d8a6;
+}
+
+#workshop-event li {
+    margin-bottom: 10px; /* Space between list items */
+    padding: 5px; /* Padding around each list item */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#workshop-event li:hover {
+    background-color: #012a4a; /* Light background on hover */
+}
+
+#gallery {
+    margin-top: 30px;
+}
+
+#gallery h2 {
+    color: #06d6a0;
+    /* justify-content: center; */
+    text-align: center;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: center; /* Center the gallery images */
+    gap: 12px; /* Space between cards */
+}
+
+.gallery-card {
+    width: calc(20% - 10px); /* Five cards in a row */
+    border: 2px solid #ff01a6; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image doesn't overflow the card */
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.gallery-card img {
+    width: 100%; /* Make image fill the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gallery-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* Members Section */
+#members {
+    margin-top: 30px;
+}
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of member boxes */
+    justify-content: center; /* Center the member boxes */
+    gap: 20px; /* Space between member boxes */
+}
+
+.member {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid #e36414; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside member box */
+    text-align: center; /* Center text */
+    flex: 1 1 200px; /* Flex item with a minimum width */
+}
+.contact-info {
+    margin-top: 10px; /* Space above the contact info */
+    text-align: center; /* Center align for contact info */
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+}
+
+.icon-link {
+    display: inline-block; /* Ensures the icon takes up space */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.icon-link:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.contact-icon {
+    width: 36px; /* Set a fixed width for the icons */
+    height: 36px; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+    color:#00b4d8;
+    font-weight: 100;
+}
+.whatsapp-icon {
+    width: 36px; /* Set a fixed width for the icons */
+    height: 36px; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+    color:#00b4d8;
+    font-weight: 200;
+
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: #03071e; /* Same background color */
+    color: #ffffff; /* White text */
+}
+footer h1 {
+    color: #a9def9; /* White text */
+}
+footer span {
+    color: #d90368;
+}
+
+footer strong {
+    color: #d9ed92;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    .h1-container {
+        flex-direction: column; /* Stack images and text on smaller screens */
+        align-items: center;
+    }
+    .text-content {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .gallery-image {
+        flex: 1 1 calc(20% - 12px); /* Reduce image width on smaller screens */
+    }
+    .gallery-card {
+        width: calc(50% - 15px); /* 3 cards in a row on medium screens */
+    }
+    .member {
+        flex: 1 1 150px; /* Adjust minimum width for member boxes */
+    }
+
+}
+
+@media (min-width: 601px) {
+    .gallery-image {
+        flex: 1 1 calc(20% - 10px); /* Five images in a row */
+    }
+    .gallery-card {
+        width: calc(20% - 12px); /* 3 cards in a row on medium screens */
+    }
+}
+
