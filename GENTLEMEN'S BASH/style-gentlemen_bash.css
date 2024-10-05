@@ -21,7 +21,12 @@ h1 {
 p {
     color: #00b4d8; /* Updated welcome message color */
 }
-
+marquee {
+    font-size: 24px;
+    color: #ef233c;
+    background: #03071e;
+    padding: 10px;
+}
 /* Main Content Styles */
 .h1-container {
     display: flex;
